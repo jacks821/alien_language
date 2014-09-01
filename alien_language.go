@@ -6,7 +6,6 @@ import (
 	"bufio"
 	"log"
 	"strings"
-	// "reflect"
 	"strconv"
 	"regexp"
 )
@@ -54,12 +53,12 @@ func returnCount(dictionary []string, testwords []string) {
 			if err != nil {
 				log.Fatal(err)
 			}
-			if expr.MatchString(w) { 
+			if expr.MatchString(w) {
 				count += 1
 			}
 			casenum = i + 1
 		}
-		fmt.Println("Case #", casenum, ": ", count)
+		fmt.Println("Case #",casenum,":", count)
 	}
 }
 
